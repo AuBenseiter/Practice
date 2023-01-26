@@ -1,9 +1,12 @@
 package home.myhome.condicional;
 
+import java.util.Scanner;
+
 public class Hora {
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
         System.out.println("Por favor, introduzca una hora del dia (0 - 23");
-        int hora = Integer.parseInt(System.console().readLine());
+        int hora = s.nextInt();
         
         if (hora >= 6 && hora <= 12) {
             System.out.println("Buenos dias");

@@ -1,11 +1,14 @@
 package home.myhome.condicional;
 
+import java.util.Scanner;
+
 public class DiaSemana {
 
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
         String dia;
         System.out.println("Introduzca un numero del 1 al 7");
-        int n = Integer.parseInt(System.console().readLine());
+        int n = s.nextInt();
 
         switch (n) {
             case 1:

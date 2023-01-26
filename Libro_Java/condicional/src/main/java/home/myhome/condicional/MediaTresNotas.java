@@ -8,8 +8,11 @@ public class MediaTresNotas {
         Scanner s = new Scanner(System.in);
         System.out.println("Este programa calcula la media de tres notas");
         System.out.println("Ingrese las tres notas");
+        System.out.println("Primera Nota");
         double nota1 = s.nextDouble();
+        System.out.println("Segunda Nota");
         double nota2 = s.nextDouble();
+        System.out.println("Tercera Nota");
         double nota3 = s.nextDouble();
 
         double nota = (nota1 + nota2 + nota3) / 3;

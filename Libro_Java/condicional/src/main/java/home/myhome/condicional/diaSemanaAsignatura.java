@@ -1,11 +1,14 @@
 package home.myhome.condicional;
 
-public class Condicional {
+import java.util.Scanner;
+
+public class DiaSemanaAsignatura {
 
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
         String dia;
         System.out.println("Introduzca un dia de la semana y dire \n la primera asignatura del dia");
-        dia = System.console().readLine();
+        dia = s.nextLine();
         dia = dia.toLowerCase();
 
         switch (dia) {
