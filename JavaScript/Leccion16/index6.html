@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JS</title>
+</head>
+<body">
+   
+    <h1 id="titulo">HOLA</h1>
+    <br/>
+    <!--La referencia 'this' alude a todo el objeto input-->
+    Nombre: <input type="text" onchange="convertir(this)">
+    <script>        
+        function convertir(nombreInput){
+            //trae lo del this
+            console.log(nombreInput);
+            //apunto al valor y lo paso a mayusculas
+            nombreInput.value = nombreInput.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

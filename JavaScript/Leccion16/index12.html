@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo DOM con JS</title>
+</head>
+<body">
+   
+    <h1 id="titulo" >HOLA</h1>
+    <br/>
+    <form action="" id="forma">
+        Nombre: <input type="text" id="nombre">
+    <br/>
+        Apellido: <input type="text" id="apellido">
+    </form>
+    
+
+    <script>
+        const forma = document.getElementById('forma');
+        //se utiliza el evento focus y se 'asocia' a la funcion cambiar(calback)
+       forma.addEventListener('focus',(evento)=>{
+            evento.target.style.background = 'cyan';
+       }, true);
+       //con el true se delega la funcionalidad
+       forma.addEventListener('blur', (evento) => {
+            evento.target.style.background = '';
+       }, true)
+       
+    </script>
+</body>
+</html>
